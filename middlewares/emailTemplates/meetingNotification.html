@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Notification</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <div
+      style="
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <h1 style="color: #333">Meeting Invitation</h1>
+      <p style="color: #666">Dear,</p>
+      <p style="color: #666">
+        You are invited to a meeting created by {{creatorName}} and the meeting
+        is scheduled as follows:
+      </p>
+      <p style="color: #666">
+        <strong>Meeting Title:</strong> {{title}}<br />
+        <strong>Date:</strong> {{date}} UTC. Please note that the time is
+        Universal Time for the meeting.<br />
+        <strong>Creator Email:</strong> {{creatorEmail}}<br />
+      </p>
+      <p style="color: #666">
+        To join the meeting, please click the button below:
+      </p>
+      <p>
+        <a
+          href="{{link}}"
+          style="
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+          "
+        >
+          Join Meeting
+        </a>
+      </p>
+      <p style="color: #666">
+        If you have any questions, feel free to contact the organizer using this
+        email {creatorEmail}.
+      </p>
+      <p style="color: #666; font-style: italic">
+        Best regards,<br />
+        {name}
+      </p>
+    </div>
+  </body>
+</html>
